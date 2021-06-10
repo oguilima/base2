@@ -1,0 +1,383 @@
+{
+  "id": "cd576818-2626-429f-8e80-bdb0fd8abd5f",
+  "version": "2.0",
+  "name": "Base 2",
+  "url": "https://mantis.saojudas.base2.com.br/",
+  "tests": [{
+    "id": "b23050a0-194a-4c4b-86fa-f086b3136964",
+    "name": "Login",
+    "commands": [{
+      "id": "52497dad-2c77-48cb-a356-2da3a9d1690e",
+      "comment": "",
+      "command": "open",
+      "target": "/login_page.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3f1bc16d-15a2-4f91-be40-9a23a32aa090",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1080x720",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a1922a84-b73c-4350-9d87-320a560a9e35",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/fieldset/label/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": "henriquesousa8559"
+    }, {
+      "id": "1b8f6ebf-e6bf-47f4-ac1f-c9a8a45a05bd",
+      "comment": "",
+      "command": "click",
+      "target": "css=.width-40",
+      "targets": [
+        ["css=.width-40", "css:finder"],
+        ["xpath=//input[@value='Entrar']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/fieldset/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ef2fe062-700e-4a89-8cd1-3bd3c7f1cdaa",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/fieldset/label/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a03528ba-22f6-4173-853f-d0f046762dad",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/fieldset/label/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": "mantisusjt"
+    }, {
+      "id": "d818a590-c690-4666-926a-b1321adf3ba1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.width-40",
+      "targets": [
+        ["css=.width-40", "css:finder"],
+        ["xpath=//input[@value='Entrar']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/fieldset/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "80751a0f-5d90-4923-9d16-7c45aef2048d",
+    "name": "PesquisarTarefa",
+    "commands": [{
+      "id": "8fb41078-742b-4ee4-9c04-f5518bcc4d77",
+      "comment": "",
+      "command": "open",
+      "target": "/my_view_page.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bebd54fb-fae4-43a1-8491-1aef238765a1",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1080x720",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1e9ef41b-1b0d-4c25-a9cc-51ce04fbad84",
+      "comment": "",
+      "command": "click",
+      "target": "name=bug_id",
+      "targets": [
+        ["name=bug_id", "name"],
+        ["css=.nav-search-input", "css:finder"],
+        ["xpath=//input[@name='bug_id']", "xpath:attributes"],
+        ["xpath=//div[@id='nav-search']/form/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c284e4de-b6e4-4041-96ba-6f7e3818758d",
+      "comment": "",
+      "command": "type",
+      "target": "name=bug_id",
+      "targets": [
+        ["name=bug_id", "name"],
+        ["css=.nav-search-input", "css:finder"],
+        ["xpath=//input[@name='bug_id']", "xpath:attributes"],
+        ["xpath=//div[@id='nav-search']/form/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "0000202"
+    }, {
+      "id": "1eb8dfee-836e-4a97-8f22-95360f77508a",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=bug_id",
+      "targets": [
+        ["name=bug_id", "name"],
+        ["css=.nav-search-input", "css:finder"],
+        ["xpath=//input[@name='bug_id']", "xpath:attributes"],
+        ["xpath=//div[@id='nav-search']/form/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }]
+  }, {
+    "id": "ae6b398d-71aa-4b80-9dc6-3ca3e9238164",
+    "name": "TornarAnotacaoPrivada",
+    "commands": [{
+      "id": "69285a17-b89a-4a6f-8cd8-a01184f82a7f",
+      "comment": "",
+      "command": "open",
+      "target": "https://mantis.saojudas.base2.com.br/my_view_page.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "09444d60-65d4-47bf-9959-3621fc98dacb",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1080x720",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a9c33bdb-57fe-4ed6-806c-432596aef951",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(2) .menu-text",
+      "targets": [
+        ["css=li:nth-child(2) .menu-text", "css:finder"],
+        ["xpath=//div[@id='sidebar']/ul/li[2]/a/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/ul/li[2]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Ver Tarefas')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "735aabea-3dc9-43cb-8efd-0074bca63f75",
+      "comment": "",
+      "command": "click",
+      "target": "css=tbody > tr:nth-child(1) > .column-id > a",
+      "targets": [
+        ["css=tbody > tr:nth-child(1) > .column-id > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'0000019')])[2]", "xpath:link"],
+        ["xpath=//table[@id='buglist']/tbody/tr/td[4]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/view.php?id=19')])[2]", "xpath:href"],
+        ["xpath=//div[2]/div/table/tbody/tr/td[4]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cff7bbe3-d13f-4dc5-8f08-9e8927f44fd2",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Ir para as Anotações",
+      "targets": [
+        ["linkText=Ir para as Anotações", "linkText"],
+        ["css=.btn-sm:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Ir para as Anotações')]", "xpath:link"],
+        ["xpath=//div[@id='main-container']/div[2]/div[2]/div/div/div/div[2]/div/div/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#bugnotes')]", "xpath:href"],
+        ["xpath=//div/div/div[2]/div/div/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Ir para as Anotações')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4885667a-a4b3-4261-b401-4408b8ef8e30",
+      "comment": "",
+      "command": "click",
+      "target": "css=#c1 .pull-left:nth-child(3) .btn",
+      "targets": [
+        ["css=#c1 .pull-left:nth-child(3) .btn", "css:finder"],
+        ["xpath=(//button[@type='submit'])[3]", "xpath:attributes"],
+        ["xpath=//tr[@id='c1']/td/div[2]/div[3]/div[3]/form/fieldset/button", "xpath:idRelative"],
+        ["xpath=//div[3]/form/fieldset/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Tornar Privado')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "62f68f43-c2e1-4cbf-a2d6-4909310159a3",
+    "name": "CadastrarAnotacao",
+    "commands": [{
+      "id": "6e2e3875-a8db-4b3b-a06d-4d4f0c3734c2",
+      "comment": "",
+      "command": "open",
+      "target": "https://mantis.saojudas.base2.com.br/my_view_page.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "77046fc3-0f12-4659-9f13-585bbc1981cd",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1456x916",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d09c1805-f6be-41a1-814f-1bd7684aebf3",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(2) .menu-text",
+      "targets": [
+        ["css=li:nth-child(2) .menu-text", "css:finder"],
+        ["xpath=//div[@id='sidebar']/ul/li[2]/a/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/ul/li[2]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Ver Tarefas')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "46d9f63c-bd1e-4de1-8d3b-9c859f273fc0",
+      "comment": "",
+      "command": "click",
+      "target": "css=tbody > tr:nth-child(1) > .column-id > a",
+      "targets": [
+        ["css=tbody > tr:nth-child(1) > .column-id > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'0000019')])[2]", "xpath:link"],
+        ["xpath=//table[@id='buglist']/tbody/tr/td[4]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/view.php?id=19')])[2]", "xpath:href"],
+        ["xpath=//div[2]/div/table/tbody/tr/td[4]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "42328239-474c-43a3-a2fa-cc12c5894c05",
+      "comment": "",
+      "command": "click",
+      "target": "css=#bugnote_add .widget-title",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "14554753-483d-40c9-80ad-e2127556044a",
+      "comment": "",
+      "command": "click",
+      "target": "id=bugnote_text",
+      "targets": [
+        ["id=bugnote_text", "id"],
+        ["name=bugnote_text", "name"],
+        ["css=#bugnote_text", "css:finder"],
+        ["xpath=//textarea[@id='bugnote_text']", "xpath:attributes"],
+        ["xpath=//div[@id='bugnote_add']/div[2]/div/div/table/tbody/tr[2]/td/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8c57aef0-8c5f-41ac-a757-01f136aa28d7",
+      "comment": "",
+      "command": "type",
+      "target": "id=bugnote_text",
+      "targets": [
+        ["id=bugnote_text", "id"],
+        ["name=bugnote_text", "name"],
+        ["css=#bugnote_text", "css:finder"],
+        ["xpath=//textarea[@id='bugnote_text']", "xpath:attributes"],
+        ["xpath=//div[@id='bugnote_add']/div[2]/div/div/table/tbody/tr[2]/td/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Nova Anotação"
+    }, {
+      "id": "a28945e2-4c4a-49d8-96fe-77190d63584a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.widget-toolbox > .btn",
+      "targets": [
+        ["css=.widget-toolbox > .btn", "css:finder"],
+        ["xpath=//input[@value='Adicionar Anotação']", "xpath:attributes"],
+        ["xpath=//div[@id='bugnote_add']/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "12399541-1cca-41f0-9686-0b7e76718cfa",
+    "name": "VerificarHistorico",
+    "commands": [{
+      "id": "fe3f04ad-a76f-4883-b2a2-c2a9e0aaf839",
+      "comment": "",
+      "command": "open",
+      "target": "https://mantis.saojudas.base2.com.br/my_view_page.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "219f60ba-a4ed-4f6d-b06e-fb7962295b45",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1440x900",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "48ff8c81-f12a-4b56-ba4c-806d022f9630",
+      "comment": "",
+      "command": "click",
+      "target": "css=a > .fa-list-alt",
+      "targets": [
+        ["css=a > .fa-list-alt", "css:finder"],
+        ["xpath=//div[@id='sidebar']/ul/li[2]/a/i", "xpath:idRelative"],
+        ["xpath=//div[2]/div/ul/li[2]/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c0042053-adc0-4607-acf3-629c5d489209",
+      "comment": "",
+      "command": "click",
+      "target": "css=tbody > tr:nth-child(1) > .column-id > a",
+      "targets": [
+        ["css=tbody > tr:nth-child(1) > .column-id > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'0000290')])[2]", "xpath:link"],
+        ["xpath=//table[@id='buglist']/tbody/tr/td[4]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/view.php?id=290')])[2]", "xpath:href"],
+        ["xpath=//div[2]/div/table/tbody/tr/td[4]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7cfa3502-aadc-4b91-827a-e8e1ce5596e8",
+      "comment": "",
+      "command": "click",
+      "target": "css=#history .\\31",
+      "targets": [
+        ["css=#history .\\31", "css:finder"],
+        ["xpath=//div[@id='history']/div/div/a/i", "xpath:idRelative"],
+        ["xpath=//div[6]/div[2]/div/div/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e0c80ee9-91e5-496e-9a84-18ee0263ee2e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-chevron-down",
+      "targets": [
+        ["css=.fa-chevron-down", "css:finder"],
+        ["xpath=//div[@id='history']/div/div/a/i", "xpath:idRelative"],
+        ["xpath=//div[6]/div[2]/div/div/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "51cf9e00-f317-4df3-b346-bed66d186905",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://mantis.saojudas.base2.com.br/"],
+  "plugins": []
+}

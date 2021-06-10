@@ -1,0 +1,213 @@
+{
+  "id": "6a937888-b006-4a66-969a-92737301e7d3",
+  "version": "2.0",
+  "name": "Desafio Base 2",
+  "url": "https://mantis.saojudas.base2.com.br",
+  "tests": [{
+    "id": "3d78ad7b-87d0-4873-abf0-1c890bc5fcc5",
+    "name": "Esqueci a senha",
+    "commands": [{
+      "id": "d9d833ce-e692-438e-9f09-82f16568ef2c",
+      "comment": "",
+      "command": "open",
+      "target": "/login_page.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "221f096c-72b7-413e-b157-6b99630d3c26",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1080x720",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "54b75c52-fe2b-4a2c-8592-bffbea475495",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/fieldset/label/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "de2b48c9-a676-432b-a1c1-a71264947562",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/fieldset/label/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": "psilva_2021"
+    }, {
+      "id": "41b12c0c-b5dd-443a-ab55-38c689824132",
+      "comment": "",
+      "command": "click",
+      "target": "css=.width-40",
+      "targets": [
+        ["css=.width-40", "css:finder"],
+        ["xpath=//input[@value='Entrar']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/fieldset/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3c2d6875-179b-4eea-858e-814c398ca524",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Perdeu a sua senha?",
+      "targets": [
+        ["linkText=Perdeu a sua senha?", "linkText"],
+        ["css=.pull-right:nth-child(9)", "css:finder"],
+        ["xpath=//a[contains(text(),'Perdeu a sua senha?')]", "xpath:link"],
+        ["xpath=//form[@id='login-form']/fieldset/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'lost_pwd_page.php?username=psilva_2021')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Perdeu a sua senha?')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "801fc42f-4f0d-48c4-8e90-5c05563aa9d1",
+      "comment": "",
+      "command": "type",
+      "target": "id=email-field",
+      "targets": [
+        ["id=email-field", "id"],
+        ["name=email", "name"],
+        ["css=#email-field", "css:finder"],
+        ["xpath=//input[@id='email-field']", "xpath:attributes"],
+        ["xpath=//form[@id='lost-password-form']/fieldset/label[2]/span/input", "xpath:idRelative"],
+        ["xpath=//label[2]/span/input", "xpath:position"]
+      ],
+      "value": "priscilasilva.9426@aluno.saojudas.br"
+    }, {
+      "id": "0c1c05c6-b26c-49c8-82e3-e9c000f8b7f3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.width-40",
+      "targets": [
+        ["css=.width-40", "css:finder"],
+        ["xpath=//input[@value='Enviar']", "xpath:attributes"],
+        ["xpath=//form[@id='lost-password-form']/fieldset/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "fb0b307b-fe19-4c27-939b-45142b41135f",
+    "name": "Apagar tarefa",
+    "commands": [{
+      "id": "345af3e4-a3f6-40b9-9905-0ca4c84b7664",
+      "comment": "",
+      "command": "open",
+      "target": "/my_view_page.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "991a4bfd-8515-467a-9b7a-bbe539f900c6",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x744",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c9a86a18-2c1f-45f3-b140-0487d1306657",
+      "comment": "",
+      "command": "click",
+      "target": "css=a > .fa-list-alt",
+      "targets": [
+        ["css=a > .fa-list-alt", "css:finder"],
+        ["xpath=//div[@id='sidebar']/ul/li[2]/a/i", "xpath:idRelative"],
+        ["xpath=//div[2]/div/ul/li[2]/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "71a333ee-556f-4f27-8eff-3deda20a4475",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(3) .lbl",
+      "targets": [
+        ["css=tr:nth-child(3) .lbl", "css:finder"],
+        ["xpath=//table[@id='buglist']/tbody/tr[3]/td/div/label/span", "xpath:idRelative"],
+        ["xpath=//tr[3]/td/div/label/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e2dae6de-18bf-4648-a80f-df82e963917c",
+      "comment": "",
+      "command": "click",
+      "target": "name=action",
+      "targets": [
+        ["name=action", "name"],
+        ["css=.input-sm:nth-child(2)", "css:finder"],
+        ["xpath=//select[@name='action']", "xpath:attributes"],
+        ["xpath=//form[@id='bug_action']/div/div[2]/div[2]/div[2]/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "341a044d-5d8e-4767-aeb9-b5ede7b45bb7",
+      "comment": "",
+      "command": "select",
+      "target": "name=action",
+      "targets": [],
+      "value": "label=Apagar"
+    }, {
+      "id": "43fe3d6d-c86c-4a2a-b2c8-0f3dbeacd1f0",
+      "comment": "",
+      "command": "click",
+      "target": "name=action",
+      "targets": [
+        ["name=action", "name"],
+        ["css=.input-sm:nth-child(2)", "css:finder"],
+        ["xpath=//select[@name='action']", "xpath:attributes"],
+        ["xpath=//form[@id='bug_action']/div/div[2]/div[2]/div[2]/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "44492816-b842-45e1-b2ed-edbad0ab7e3d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-inline > .btn:nth-child(3)",
+      "targets": [
+        ["css=.form-inline > .btn:nth-child(3)", "css:finder"],
+        ["xpath=//input[@value='OK']", "xpath:attributes"],
+        ["xpath=//form[@id='bug_action']/div/div[2]/div[2]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d4296a81-ee76-4f68-9b48-bf127d9621e3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-white",
+      "targets": [
+        ["css=.btn-white", "css:finder"],
+        ["xpath=//input[@value='Apagar Tarefas']", "xpath:attributes"],
+        ["xpath=//div[@id='action-group-div']/form/div/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "5fb1b220-cc1d-4c29-8e0b-24c9a819b908",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://mantis.saojudas.base2.com.br/"],
+  "plugins": []
+}

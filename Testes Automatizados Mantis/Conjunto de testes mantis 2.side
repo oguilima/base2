@@ -1,0 +1,1020 @@
+{
+  "id": "07fd7344-73cf-4831-a481-b182e59fc5a9",
+  "version": "2.0",
+  "name": "Base2",
+  "url": "https://mantis.saojudas.base2.com.br",
+  "tests": [{
+    "id": "37ae89ff-6f5d-4b35-a3e5-a79a72714017",
+    "name": "T6: Enviar lembrete s1",
+    "commands": [{
+      "id": "4faa29ee-5ffd-4781-9b86-4766377b5a3f",
+      "comment": "",
+      "command": "open",
+      "target": "/my_view_page.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4e6948c6-eaba-4d35-9d4b-b99531a132df",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "784x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3dedad03-0bb7-4956-a200-fb5130dc161a",
+      "comment": "",
+      "command": "click",
+      "target": "id=menu-toggler",
+      "targets": [
+        ["id=menu-toggler", "id"],
+        ["css=#menu-toggler", "css:finder"],
+        ["xpath=//button[@id='menu-toggler']", "xpath:attributes"],
+        ["xpath=//div[@id='navbar-container']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Toggle sidebar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "76ce92fa-ccbb-4593-9f4e-8a86c4355f17",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(2) .menu-text",
+      "targets": [
+        ["css=li:nth-child(2) .menu-text", "css:finder"],
+        ["xpath=//div[@id='sidebar']/ul/li[2]/a/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/ul/li[2]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Ver Tarefas')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4a627c7b-c539-4137-b191-ed606cb2add9",
+      "comment": "",
+      "command": "click",
+      "target": "css=tbody > tr:nth-child(1) > .column-id > a",
+      "targets": [
+        ["css=tbody > tr:nth-child(1) > .column-id > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'0000141')])[2]", "xpath:link"],
+        ["xpath=//table[@id='buglist']/tbody/tr/td[4]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/view.php?id=141')])[2]", "xpath:href"],
+        ["xpath=//div[2]/div/table/tbody/tr/td[4]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "565c3e8f-ea0f-4790-bf2a-97a2287a87da",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Enviar um lembrete",
+      "targets": [
+        ["linkText=Enviar um lembrete", "linkText"],
+        ["css=.pull-left > .btn:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'Enviar um lembrete')]", "xpath:link"],
+        ["xpath=//div[@id='main-container']/div[2]/div[2]/div/div/div/div[2]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'bug_reminder_page.php?bug_id=141')]", "xpath:href"],
+        ["xpath=//div/div/div[2]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Enviar um lembrete')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "69c43342-f34d-4f42-a39d-689e8703b292",
+      "comment": "",
+      "command": "addSelection",
+      "target": "id=recipient",
+      "targets": [
+        ["id=recipient", "id"],
+        ["name=to[]", "name"],
+        ["css=#recipient", "css:finder"],
+        ["xpath=//select[@id='recipient']", "xpath:attributes"],
+        ["xpath=//div[@id='send-reminder-div']/form/div/div[2]/div/div/table/tbody/tr/td/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": "label=guilherme.lima"
+    }, {
+      "id": "3e32d8b6-b3aa-4988-a8dc-88ab6a7aed46",
+      "comment": "",
+      "command": "click",
+      "target": "name=body",
+      "targets": [
+        ["name=body", "name"],
+        ["css=.form-control", "css:finder"],
+        ["xpath=//textarea[@name='body']", "xpath:attributes"],
+        ["xpath=//div[@id='send-reminder-div']/form/div/div[2]/div/div/table/tbody/tr/td[2]/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "30b49c8d-3574-4bc1-bad5-a59ec0cb6807",
+      "comment": "",
+      "command": "type",
+      "target": "name=body",
+      "targets": [
+        ["name=body", "name"],
+        ["css=.form-control", "css:finder"],
+        ["xpath=//textarea[@name='body']", "xpath:attributes"],
+        ["xpath=//div[@id='send-reminder-div']/form/div/div[2]/div/div/table/tbody/tr/td[2]/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "teste lembrete"
+    }, {
+      "id": "d1afc88d-dc76-44a4-b3d4-5af5d1a776b5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.widget-toolbox > .btn",
+      "targets": [
+        ["css=.widget-toolbox > .btn", "css:finder"],
+        ["xpath=//input[@value='Enviar']", "xpath:attributes"],
+        ["xpath=//div[@id='send-reminder-div']/form/div/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "de768368-c191-4be1-86d0-47b373bc1b60",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Clique aqui para prosseguir",
+      "targets": [
+        ["linkText=Clique aqui para prosseguir", "linkText"],
+        ["css=.btn-white", "css:finder"],
+        ["xpath=//a[contains(text(),'Clique aqui para prosseguir')]", "xpath:link"],
+        ["xpath=//div[@id='main-container']/div[2]/div[2]/div/div/div/div[2]/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'view.php?id=141')])[2]", "xpath:href"],
+        ["xpath=//div[2]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Clique aqui para prosseguir')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "6e2a6ca3-d81d-4479-a299-a25bf3b35c20",
+    "name": "T6: Enviar lembrete s2",
+    "commands": [{
+      "id": "fc4d3ac5-2cb7-4202-a5e0-0bf22385b41e",
+      "comment": "",
+      "command": "open",
+      "target": "/my_view_page.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cd83274f-efad-4acc-998f-8fcc484be38f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "803x824",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6a007037-13b9-4221-8eb6-7d7ca51327f9",
+      "comment": "",
+      "command": "click",
+      "target": "id=menu-toggler",
+      "targets": [
+        ["id=menu-toggler", "id"],
+        ["css=#menu-toggler", "css:finder"],
+        ["xpath=//button[@id='menu-toggler']", "xpath:attributes"],
+        ["xpath=//div[@id='navbar-container']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Toggle sidebar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "08621a4d-7d69-4a58-ab86-14e558f6b12a",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(2) .menu-text",
+      "targets": [
+        ["css=li:nth-child(2) .menu-text", "css:finder"],
+        ["xpath=//div[@id='sidebar']/ul/li[2]/a/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/ul/li[2]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Ver Tarefas')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9125cfea-d0a3-487f-9117-4b4d9f909396",
+      "comment": "",
+      "command": "click",
+      "target": "css=tbody > tr:nth-child(1) > .column-id > a",
+      "targets": [
+        ["css=tbody > tr:nth-child(1) > .column-id > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'0000141')])[2]", "xpath:link"],
+        ["xpath=//table[@id='buglist']/tbody/tr/td[4]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/view.php?id=141')])[2]", "xpath:href"],
+        ["xpath=//div[2]/div/table/tbody/tr/td[4]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f275d2a8-c381-4e53-97f6-23e5b54ed6af",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Enviar um lembrete",
+      "targets": [
+        ["linkText=Enviar um lembrete", "linkText"],
+        ["css=.pull-left > .btn:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'Enviar um lembrete')]", "xpath:link"],
+        ["xpath=//div[@id='main-container']/div[2]/div[2]/div/div/div/div[2]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'bug_reminder_page.php?bug_id=141')]", "xpath:href"],
+        ["xpath=//div/div/div[2]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Enviar um lembrete')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6c0c84dc-b0ed-4f80-a664-fa95aefafc29",
+      "comment": "",
+      "command": "click",
+      "target": "name=body",
+      "targets": [
+        ["name=body", "name"],
+        ["css=.form-control", "css:finder"],
+        ["xpath=//textarea[@name='body']", "xpath:attributes"],
+        ["xpath=//div[@id='send-reminder-div']/form/div/div[2]/div/div/table/tbody/tr/td[2]/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a5c14644-9f4b-4ea0-b61b-3f308ae18a4d",
+      "comment": "",
+      "command": "type",
+      "target": "name=body",
+      "targets": [
+        ["name=body", "name"],
+        ["css=.form-control", "css:finder"],
+        ["xpath=//textarea[@name='body']", "xpath:attributes"],
+        ["xpath=//div[@id='send-reminder-div']/form/div/div[2]/div/div/table/tbody/tr/td[2]/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "teste lembrete"
+    }, {
+      "id": "30f9f74e-3569-4f04-b1d7-582a28d8c211",
+      "comment": "",
+      "command": "click",
+      "target": "css=.widget-toolbox > .btn",
+      "targets": [
+        ["css=.widget-toolbox > .btn", "css:finder"],
+        ["xpath=//input[@value='Enviar']", "xpath:attributes"],
+        ["xpath=//div[@id='send-reminder-div']/form/div/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "764a67af-9839-4597-8138-94827f0f1dd2",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=main-container",
+      "targets": [
+        ["id=main-container", "id"],
+        ["css=#main-container", "css:finder"],
+        ["xpath=//div[@id='main-container']", "xpath:attributes"],
+        ["xpath=//body/div[2]", "xpath:position"]
+      ],
+      "value": "Rafael Melende ( Rafael Melende Rodrigues ) desenvolvedor\\nRecentemente Visitado: 0000141\\nAPPLICATION ERROR #200\\nUm parâmetro necessário para esta página (to) não foi encontrado.\\nPor favor, utilize o botão \"Voltar\" de seu navegador web para voltar à pagina anterior. Lá você pode corrigir quaisquer problemas identificados neste erro ou escolher uma outra ação. Você também pode clicar em uma opção da barra de menus para ir diretamente para outra seção.\\nPowered by MantisBT\\nCopyright © 2000 - 2021 MantisBT Team\\nContato administrator para assistência"
+    }]
+  }, {
+    "id": "0711d2ea-077f-4492-8457-f3d3e654f21f",
+    "name": "T6: Enviar lembrete s3",
+    "commands": [{
+      "id": "452a6af7-0ba2-4437-83cc-bd5c51de391e",
+      "comment": "",
+      "command": "open",
+      "target": "/my_view_page.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ffceeb26-3fcd-4391-b34f-890a28c19c23",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "803x824",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b05cd35e-1626-4d8e-a1a0-05595dfc5835",
+      "comment": "",
+      "command": "mouseDown",
+      "target": "css=.icon-bar:nth-child(2)",
+      "targets": [
+        ["css=.icon-bar:nth-child(2)", "css:finder"],
+        ["xpath=//button[@id='menu-toggler']/span[2]", "xpath:idRelative"],
+        ["xpath=//span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f73a8176-6497-478d-8657-49c36a54bf8e",
+      "comment": "",
+      "command": "mouseUp",
+      "target": "id=menu-toggler",
+      "targets": [
+        ["id=menu-toggler", "id"],
+        ["css=#menu-toggler", "css:finder"],
+        ["xpath=//button[@id='menu-toggler']", "xpath:attributes"],
+        ["xpath=//div[@id='navbar-container']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Toggle sidebar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "52553d47-fcef-407e-91cc-1572b9939c2f",
+      "comment": "",
+      "command": "click",
+      "target": "id=menu-toggler",
+      "targets": [
+        ["id=menu-toggler", "id"],
+        ["css=#menu-toggler", "css:finder"],
+        ["xpath=//button[@id='menu-toggler']", "xpath:attributes"],
+        ["xpath=//div[@id='navbar-container']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Toggle sidebar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a028c157-6e27-44ed-bf4e-335d40743158",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(2) .menu-text",
+      "targets": [
+        ["css=li:nth-child(2) .menu-text", "css:finder"],
+        ["xpath=//div[@id='sidebar']/ul/li[2]/a/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/ul/li[2]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Ver Tarefas')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b38cd209-df88-4e5b-bc21-30795cc08479",
+      "comment": "",
+      "command": "click",
+      "target": "css=tbody > tr:nth-child(1) > .column-id > a",
+      "targets": [
+        ["css=tbody > tr:nth-child(1) > .column-id > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'0000141')])[2]", "xpath:link"],
+        ["xpath=//table[@id='buglist']/tbody/tr/td[4]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/view.php?id=141')])[2]", "xpath:href"],
+        ["xpath=//div[2]/div/table/tbody/tr/td[4]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a11ba42a-a13c-4c43-ba1e-724e2d41ec77",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Enviar um lembrete",
+      "targets": [
+        ["linkText=Enviar um lembrete", "linkText"],
+        ["css=.pull-left > .btn:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'Enviar um lembrete')]", "xpath:link"],
+        ["xpath=//div[@id='main-container']/div[2]/div[2]/div/div/div/div[2]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'bug_reminder_page.php?bug_id=141')]", "xpath:href"],
+        ["xpath=//div/div/div[2]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Enviar um lembrete')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cee690bb-5b9d-489c-8f31-f5bdda644869",
+      "comment": "",
+      "command": "addSelection",
+      "target": "id=recipient",
+      "targets": [
+        ["id=recipient", "id"],
+        ["name=to[]", "name"],
+        ["css=#recipient", "css:finder"],
+        ["xpath=//select[@id='recipient']", "xpath:attributes"],
+        ["xpath=//div[@id='send-reminder-div']/form/div/div[2]/div/div/table/tbody/tr/td/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": "label=guilherme.lima"
+    }, {
+      "id": "125f51e3-09fd-47a8-857b-3e8571bcffdc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.widget-toolbox > .btn",
+      "targets": [
+        ["css=.widget-toolbox > .btn", "css:finder"],
+        ["xpath=//input[@value='Enviar']", "xpath:attributes"],
+        ["xpath=//div[@id='send-reminder-div']/form/div/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fa0107a2-5dab-422d-beb4-827127526b96",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=main-container",
+      "targets": [
+        ["id=main-container", "id"],
+        ["css=#main-container", "css:finder"],
+        ["xpath=//div[@id='main-container']", "xpath:attributes"],
+        ["xpath=//body/div[2]", "xpath:position"]
+      ],
+      "value": "Rafael Melende ( Rafael Melende Rodrigues ) desenvolvedor\\nRecentemente Visitado: 0000141\\nAPPLICATION ERROR #200\\nUm parâmetro necessário para esta página (to) não foi encontrado.\\nPor favor, utilize o botão \"Voltar\" de seu navegador web para voltar à pagina anterior. Lá você pode corrigir quaisquer problemas identificados neste erro ou escolher uma outra ação. Você também pode clicar em uma opção da barra de menus para ir diretamente para outra seção.\\nPowered by MantisBT\\nCopyright © 2000 - 2021 MantisBT Team\\nContato administrator para assistência"
+    }]
+  }, {
+    "id": "df552e85-2fd6-4ecd-97e7-0394f3d5e4ba",
+    "name": "T7: Fechar tarefa s1",
+    "commands": [{
+      "id": "80d46984-8489-496d-aee7-5ee51f6a76f7",
+      "comment": "",
+      "command": "open",
+      "target": "/my_view_page.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "426a06a0-bcb9-4e0a-a631-9dc16b73127e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "784x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d37c35ee-7c2b-48e8-97c0-42fa07fac1f8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.icon-bar:nth-child(3)",
+      "targets": [
+        ["css=.icon-bar:nth-child(3)", "css:finder"],
+        ["xpath=//button[@id='menu-toggler']/span[3]", "xpath:idRelative"],
+        ["xpath=//span[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9ca3908d-b098-455d-90f7-46ef25bd1e3e",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(2) .menu-text",
+      "targets": [
+        ["css=li:nth-child(2) .menu-text", "css:finder"],
+        ["xpath=//div[@id='sidebar']/ul/li[2]/a/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/ul/li[2]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Ver Tarefas')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3793aa38-1525-4451-abc9-5ba700000b92",
+      "comment": "",
+      "command": "click",
+      "target": "css=tbody > tr:nth-child(1) > .column-id > a",
+      "targets": [
+        ["css=tbody > tr:nth-child(1) > .column-id > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'0000245')])[2]", "xpath:link"],
+        ["xpath=//table[@id='buglist']/tbody/tr/td[4]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/view.php?id=245')])[2]", "xpath:href"],
+        ["xpath=//div[2]/div/table/tbody/tr/td[4]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dc9203d4-a90a-4322-8703-8a7e508d680d",
+      "comment": "",
+      "command": "click",
+      "target": "css=fieldset > .btn:nth-child(5)",
+      "targets": [
+        ["css=fieldset > .btn:nth-child(5)", "css:finder"],
+        ["xpath=//input[@value='Fechar']", "xpath:attributes"],
+        ["xpath=//div[@id='main-container']/div[2]/div[2]/div/div/div/div[2]/div[2]/div/table/tfoot/tr/td/div/div[7]/form/fieldset/input[5]", "xpath:idRelative"],
+        ["xpath=//fieldset/input[5]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "545519b5-6db0-4637-a9b2-1a716b08129d",
+      "comment": "",
+      "command": "click",
+      "target": "id=bugnote_text",
+      "targets": [
+        ["id=bugnote_text", "id"],
+        ["name=bugnote_text", "name"],
+        ["css=#bugnote_text", "css:finder"],
+        ["xpath=//textarea[@id='bugnote_text']", "xpath:attributes"],
+        ["xpath=//tr[@id='bug-change-status-note']/td/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5997c26d-2448-4e9f-bda5-57c9bb2b448a",
+      "comment": "",
+      "command": "type",
+      "target": "id=bugnote_text",
+      "targets": [
+        ["id=bugnote_text", "id"],
+        ["name=bugnote_text", "name"],
+        ["css=#bugnote_text", "css:finder"],
+        ["xpath=//textarea[@id='bugnote_text']", "xpath:attributes"],
+        ["xpath=//tr[@id='bug-change-status-note']/td/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Tarefa concluída"
+    }, {
+      "id": "a0e53caf-a377-416b-b422-4322b6a780e1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.widget-toolbox > .btn",
+      "targets": [
+        ["css=.widget-toolbox > .btn", "css:finder"],
+        ["xpath=//input[@value='Fechar Tarefa']", "xpath:attributes"],
+        ["xpath=//form[@id='bug-change-status-form']/fieldset/div/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a179c7c5-944b-4bbd-9a79-72786bb53652",
+      "comment": "",
+      "command": "mouseDownAt",
+      "target": "css=fieldset > .btn:nth-child(5)",
+      "targets": [
+        ["css=fieldset > .btn:nth-child(5)", "css:finder"],
+        ["xpath=//input[@value='Reabrir']", "xpath:attributes"],
+        ["xpath=//div[@id='main-container']/div[2]/div[2]/div/div/div/div[2]/div[2]/div/table/tfoot/tr/td/div/div[2]/form/fieldset/input[5]", "xpath:idRelative"],
+        ["xpath=//input[5]", "xpath:position"]
+      ],
+      "value": "5.849998474121094,15.5999755859375"
+    }, {
+      "id": "e59c01c3-b7e3-45c0-b7dc-997691dabb29",
+      "comment": "",
+      "command": "mouseMoveAt",
+      "target": "css=fieldset > .btn:nth-child(5)",
+      "targets": [
+        ["css=fieldset > .btn:nth-child(5)", "css:finder"],
+        ["xpath=//input[@value='Reabrir']", "xpath:attributes"],
+        ["xpath=//div[@id='main-container']/div[2]/div[2]/div/div/div/div[2]/div[2]/div/table/tfoot/tr/td/div/div[2]/form/fieldset/input[5]", "xpath:idRelative"],
+        ["xpath=//input[5]", "xpath:position"]
+      ],
+      "value": "5.849998474121094,15.5999755859375"
+    }, {
+      "id": "8cfea1ce-3d9e-4d8d-83db-ee6c8a502882",
+      "comment": "",
+      "command": "mouseUpAt",
+      "target": "css=fieldset > .btn:nth-child(5)",
+      "targets": [
+        ["css=fieldset > .btn:nth-child(5)", "css:finder"],
+        ["xpath=//input[@value='Reabrir']", "xpath:attributes"],
+        ["xpath=//div[@id='main-container']/div[2]/div[2]/div/div/div/div[2]/div[2]/div/table/tfoot/tr/td/div/div[2]/form/fieldset/input[5]", "xpath:idRelative"],
+        ["xpath=//input[5]", "xpath:position"]
+      ],
+      "value": "5.849998474121094,15.5999755859375"
+    }, {
+      "id": "c4ed09a4-7f91-489a-8fce-a56a74ac9366",
+      "comment": "",
+      "command": "click",
+      "target": "css=fieldset > .btn:nth-child(5)",
+      "targets": [
+        ["css=fieldset > .btn:nth-child(5)", "css:finder"],
+        ["xpath=//input[@value='Reabrir']", "xpath:attributes"],
+        ["xpath=//div[@id='main-container']/div[2]/div[2]/div/div/div/div[2]/div[2]/div/table/tfoot/tr/td/div/div[2]/form/fieldset/input[5]", "xpath:idRelative"],
+        ["xpath=//input[5]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "454b8511-b98a-428d-aa08-3395bb7fad86",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.bug-status:nth-child(2)",
+      "targets": [
+        ["css=.bug-status:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='main-container']/div[2]/div[2]/div/div/div/div[2]/div[2]/div/table/tbody/tr[7]/td", "xpath:idRelative"],
+        ["xpath=//tr[7]/td", "xpath:position"],
+        ["xpath=//td[contains(.,' fechado')]", "xpath:innerText"]
+      ],
+      "value": "fechado"
+    }, {
+      "id": "c00d51b1-5261-4764-9fc2-11268e195062",
+      "comment": "",
+      "command": "click",
+      "target": "css=.widget-toolbox > .btn",
+      "targets": [
+        ["css=.widget-toolbox > .btn", "css:finder"],
+        ["xpath=//input[@value='Solicitar Retorno']", "xpath:attributes"],
+        ["xpath=//form[@id='bug-change-status-form']/fieldset/div/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "badfb024-a999-4322-9bd5-0f8c628032c4",
+      "comment": "",
+      "command": "click",
+      "target": "css=fieldset > .btn:nth-child(5)",
+      "targets": [
+        ["css=fieldset > .btn:nth-child(5)", "css:finder"],
+        ["xpath=//input[@value='Reabrir']", "xpath:attributes"],
+        ["xpath=//div[@id='main-container']/div[2]/div[2]/div/div/div/div[2]/div[2]/div/table/tfoot/tr/td/div/div[2]/form/fieldset/input[5]", "xpath:idRelative"],
+        ["xpath=//input[5]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "3642bb6d-13a5-463e-8c62-9720c31644e2",
+    "name": "T8: Alterar atv s1",
+    "commands": [{
+      "id": "99498566-e448-4fa4-acb0-8bb578280265",
+      "comment": "",
+      "command": "open",
+      "target": "/my_view_page.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c88cbb4f-fd98-4cf4-b740-f07237c7311a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "787x809",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c2e9dde0-0b0e-4dce-ba3d-3cdd82a9d6a4",
+      "comment": "",
+      "command": "click",
+      "target": "id=menu-toggler",
+      "targets": [
+        ["id=menu-toggler", "id"],
+        ["css=#menu-toggler", "css:finder"],
+        ["xpath=//button[@id='menu-toggler']", "xpath:attributes"],
+        ["xpath=//div[@id='navbar-container']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Toggle sidebar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ed3ced81-da8b-4fd3-82d8-ce3f49aa4f16",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Ver Tarefas",
+      "targets": [
+        ["linkText=Ver Tarefas", "linkText"],
+        ["css=.nav-list > li:nth-child(2) > a", "css:finder"],
+        ["xpath=//div[@id='sidebar']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/view_all_bug_page.php')]", "xpath:href"],
+        ["xpath=//div[2]/div/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,' Ver Tarefas')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e60f87f6-d2b7-4369-831d-0c899e5e74e7",
+      "comment": "",
+      "command": "click",
+      "target": "css=tbody > tr:nth-child(1) > .column-id > a",
+      "targets": [
+        ["css=tbody > tr:nth-child(1) > .column-id > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'0000141')])[2]", "xpath:link"],
+        ["xpath=//table[@id='buglist']/tbody/tr/td[4]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/view.php?id=141')])[2]", "xpath:href"],
+        ["xpath=//div[2]/div/table/tbody/tr/td[4]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "742496d5-2b50-472c-9dbe-0217f4e60d1a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-group:nth-child(8) > .pull-left:nth-child(1) .btn",
+      "targets": [
+        ["css=.btn-group:nth-child(8) > .pull-left:nth-child(1) .btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//tr[@id='c51']/td/div[2]/div[3]/div/form/fieldset/button", "xpath:idRelative"],
+        ["xpath=//fieldset/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Alterar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6a4ce714-3252-42eb-8b11-cb8aec9ed44b",
+      "comment": "",
+      "command": "click",
+      "target": "id=bugnote_text",
+      "targets": [
+        ["id=bugnote_text", "id"],
+        ["name=bugnote_text", "name"],
+        ["css=#bugnote_text", "css:finder"],
+        ["xpath=//textarea[@id='bugnote_text']", "xpath:attributes"],
+        ["xpath=//div[@id='main-container']/div[2]/div[2]/div/div/form/div/div[2]/div/div/table/tbody/tr/td/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8c886ecb-f9a8-49a8-82f8-15a5e11aecb1",
+      "comment": "",
+      "command": "type",
+      "target": "id=bugnote_text",
+      "targets": [
+        ["id=bugnote_text", "id"],
+        ["name=bugnote_text", "name"],
+        ["css=#bugnote_text", "css:finder"],
+        ["xpath=//textarea[@id='bugnote_text']", "xpath:attributes"],
+        ["xpath=//div[@id='main-container']/div[2]/div[2]/div/div/form/div/div[2]/div/div/table/tbody/tr/td/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Tarefa editada\\n\\n"
+    }, {
+      "id": "599b8c84-7802-478f-9d09-6600f1006bd0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-white:nth-child(1)",
+      "targets": [
+        ["css=.btn-white:nth-child(1)", "css:finder"],
+        ["xpath=//input[@value='Atualizar Informação']", "xpath:attributes"],
+        ["xpath=//div[@id='main-container']/div[2]/div[2]/div/div/form/div/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ff4a9158-f32f-4e32-bdf8-eddcee35e730",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.no-margin:nth-child(4)",
+      "targets": [
+        ["css=.no-margin:nth-child(4)", "css:finder"],
+        ["xpath=//tr[@id='c72']/td/div[2]/p[4]", "xpath:idRelative"],
+        ["xpath=//p[4]", "xpath:position"],
+        ["xpath=//p[contains(.,' Última edição: 2021-06-03 01:23')]", "xpath:innerText"]
+      ],
+      "value": "Última edição: 2021-06-03 01:23"
+    }]
+  }, {
+    "id": "a47da731-a967-4664-9060-b60d26ec5562",
+    "name": "T9: Apagar atv",
+    "commands": [{
+      "id": "4d3f877f-a9ec-41fb-b724-f4653d35f87a",
+      "comment": "",
+      "command": "open",
+      "target": "/my_view_page.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "15cbda6c-e535-44d5-a13b-b41d4c1023a2",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b2a5421c-0ecb-4d78-a393-66963b510f8f",
+      "comment": "",
+      "command": "click",
+      "target": "css=a > .fa-list-alt",
+      "targets": [
+        ["css=a > .fa-list-alt", "css:finder"],
+        ["xpath=//div[@id='sidebar']/ul/li[2]/a/i", "xpath:idRelative"],
+        ["xpath=//div[2]/div/ul/li[2]/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9ab7cf8b-5638-4a19-92c6-4dc2e0d21262",
+      "comment": "",
+      "command": "click",
+      "target": "css=tbody > tr:nth-child(1) > .column-id > a",
+      "targets": [
+        ["css=tbody > tr:nth-child(1) > .column-id > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'0000141')])[2]", "xpath:link"],
+        ["xpath=//table[@id='buglist']/tbody/tr/td[4]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/view.php?id=141')])[2]", "xpath:href"],
+        ["xpath=//div[2]/div/table/tbody/tr/td[4]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "60ce0ca6-4d16-4fb3-beb6-badf1d69c3ea",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-group:nth-child(8) > .pull-left:nth-child(2) .btn",
+      "targets": [
+        ["css=.btn-group:nth-child(8) > .pull-left:nth-child(2) .btn", "css:finder"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//tr[@id='c72']/td/div[2]/div[3]/div[2]/form/fieldset/button", "xpath:idRelative"],
+        ["xpath=//div[2]/form/fieldset/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Apagar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "da0a7a43-2b24-44cf-8be1-12c122039939",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-white",
+      "targets": [
+        ["css=.btn-white", "css:finder"],
+        ["xpath=//input[@value='Apagar Anotação']", "xpath:attributes"],
+        ["xpath=//div[@id='main-container']/div[2]/div[2]/div/div/div[2]/form/input[4]", "xpath:idRelative"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "6a536b37-1329-4d9a-9e07-f82797c6c59f",
+    "name": "T10: AtvPrivada",
+    "commands": [{
+      "id": "d4109393-1844-4903-bdfd-419708a66eab",
+      "comment": "",
+      "command": "open",
+      "target": "/login_page.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "906a5c85-215f-43e6-8563-15e3a05d0040",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "806x824",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "524e6296-c404-4043-ad21-de2826a360f2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.icon-bar:nth-child(3)",
+      "targets": [
+        ["css=.icon-bar:nth-child(3)", "css:finder"],
+        ["xpath=//button[@id='menu-toggler']/span[3]", "xpath:idRelative"],
+        ["xpath=//span[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a7615be5-2bac-4838-8314-5b43ee1579f5",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(2) .menu-text",
+      "targets": [
+        ["css=li:nth-child(2) .menu-text", "css:finder"],
+        ["xpath=//div[@id='sidebar']/ul/li[2]/a/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/ul/li[2]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Ver Tarefas')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8fb32b68-44ba-42ff-8d7a-bfe128ad2a60",
+      "comment": "",
+      "command": "click",
+      "target": "css=tbody .column-id > a",
+      "targets": [
+        ["css=tbody .column-id > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'0000245')])[2]", "xpath:link"],
+        ["xpath=//table[@id='buglist']/tbody/tr/td[4]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/view.php?id=245')])[2]", "xpath:href"],
+        ["xpath=//div[2]/div/table/tbody/tr/td[4]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "73521c82-475e-4803-9458-de37ecb2c886",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pull-left:nth-child(3) fieldset > .btn",
+      "targets": [
+        ["css=.pull-left:nth-child(3) fieldset > .btn", "css:finder"],
+        ["xpath=(//button[@type='submit'])[3]", "xpath:attributes"],
+        ["xpath=//tr[@id='c72']/td/div[2]/div[3]/div[3]/form/fieldset/button", "xpath:idRelative"],
+        ["xpath=//div[3]/form/fieldset/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Tornar Privado')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ae11f48b-213b-4838-8708-7b4c23eb9fc8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.no-margin:nth-child(2)",
+      "targets": [
+        ["css=.no-margin:nth-child(2)", "css:finder"],
+        ["xpath=//tr[@id='c72']/td/div[2]/p[2]", "xpath:idRelative"],
+        ["xpath=//p[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a183ec6a-7e80-4ed6-9b9c-6e23bafb38b7",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.no-margin:nth-child(2)",
+      "targets": [
+        ["css=.no-margin:nth-child(2)", "css:finder"],
+        ["xpath=//tr[@id='c72']/td/div[2]/p[2]", "xpath:idRelative"],
+        ["xpath=//p[2]", "xpath:position"]
+      ],
+      "value": "2021-06-01 07:40    privado"
+    }, {
+      "id": "28388b6e-bce9-4acd-8ec1-84d06810d3d5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-group:nth-child(8) > .pull-left:nth-child(3) .btn",
+      "targets": [
+        ["css=.btn-group:nth-child(8) > .pull-left:nth-child(3) .btn", "css:finder"],
+        ["xpath=(//button[@type='submit'])[3]", "xpath:attributes"],
+        ["xpath=//tr[@id='c72']/td/div[2]/div[3]/div[3]/form/fieldset/button", "xpath:idRelative"],
+        ["xpath=//div[3]/form/fieldset/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Tornar Público')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "dd7b4141-1f7c-413a-a97b-e35e9c575f1a",
+    "name": "T8: Alterar atv s2*",
+    "commands": [{
+      "id": "51966523-c9c5-49fd-8e69-3cd709cc2353",
+      "comment": "",
+      "command": "open",
+      "target": "/my_view_page.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3d968993-9efd-4a54-b016-28f5a7e245d3",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "787x809",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ead0591a-3e3b-4271-b72f-dfbd10ffd98c",
+      "comment": "",
+      "command": "click",
+      "target": "id=menu-toggler",
+      "targets": [
+        ["id=menu-toggler", "id"],
+        ["css=#menu-toggler", "css:finder"],
+        ["xpath=//button[@id='menu-toggler']", "xpath:attributes"],
+        ["xpath=//div[@id='navbar-container']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Toggle sidebar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b6ca1a7e-7ed8-4540-bcb3-4825edbec1c2",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Ver Tarefas",
+      "targets": [
+        ["linkText=Ver Tarefas", "linkText"],
+        ["css=.nav-list > li:nth-child(2) > a", "css:finder"],
+        ["xpath=//div[@id='sidebar']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/view_all_bug_page.php')]", "xpath:href"],
+        ["xpath=//div[2]/div/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,' Ver Tarefas')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1fa0bd84-c84d-4125-a41b-96a4c3edd89e",
+      "comment": "",
+      "command": "click",
+      "target": "css=tbody > tr:nth-child(1) > .column-id > a",
+      "targets": [
+        ["css=tbody > tr:nth-child(1) > .column-id > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'0000141')])[2]", "xpath:link"],
+        ["xpath=//table[@id='buglist']/tbody/tr/td[4]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/view.php?id=141')])[2]", "xpath:href"],
+        ["xpath=//div[2]/div/table/tbody/tr/td[4]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "aa32ecf7-7aee-457b-ad6e-afe2b7c75faa",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-group:nth-child(8) > .pull-left:nth-child(1) .btn",
+      "targets": [
+        ["css=.btn-group:nth-child(8) > .pull-left:nth-child(1) .btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//tr[@id='c51']/td/div[2]/div[3]/div/form/fieldset/button", "xpath:idRelative"],
+        ["xpath=//fieldset/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Alterar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "37601a98-529f-42df-8f24-2b34519ba0d5",
+      "comment": "",
+      "command": "click",
+      "target": "id=bugnote_text",
+      "targets": [
+        ["id=bugnote_text", "id"],
+        ["name=bugnote_text", "name"],
+        ["css=#bugnote_text", "css:finder"],
+        ["xpath=//textarea[@id='bugnote_text']", "xpath:attributes"],
+        ["xpath=//div[@id='main-container']/div[2]/div[2]/div/div/form/div/div[2]/div/div/table/tbody/tr/td/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "57c72197-dac9-4a8f-b600-6811ad6ca699",
+      "comment": "",
+      "command": "type",
+      "target": "id=bugnote_text",
+      "targets": [
+        ["id=bugnote_text", "id"],
+        ["name=bugnote_text", "name"],
+        ["css=#bugnote_text", "css:finder"],
+        ["xpath=//textarea[@id='bugnote_text']", "xpath:attributes"],
+        ["xpath=//div[@id='main-container']/div[2]/div[2]/div/div/form/div/div[2]/div/div/table/tbody/tr/td/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "\\n\\n"
+    }, {
+      "id": "6a0bdd0a-0674-4c85-9bb5-ed6490664ba9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-white:nth-child(1)",
+      "targets": [
+        ["css=.btn-white:nth-child(1)", "css:finder"],
+        ["xpath=//input[@value='Atualizar Informação']", "xpath:attributes"],
+        ["xpath=//div[@id='main-container']/div[2]/div[2]/div/div/form/div/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c3536165-d61f-4058-9906-b11272a12942",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=main-container",
+      "targets": [
+        ["id=main-container", "id"],
+        ["css=#main-container", "css:finder"],
+        ["xpath=//div[@id='main-container']", "xpath:attributes"],
+        ["xpath=//body/div[2]", "xpath:position"]
+      ],
+      "value": "Rafael Melende ( Rafael Melende Rodrigues ) desenvolvedor\\nRecentemente Visitado: 0000141\\nAPPLICATION ERROR #200\\nUm parâmetro necessário para esta página (to) não foi encontrado.\\nPor favor, utilize o botão \"Voltar\" de seu navegador web para voltar à pagina anterior. Lá você pode corrigir quaisquer problemas identificados neste erro ou escolher uma outra ação. Você também pode clicar em uma opção da barra de menus para ir diretamente para outra seção.\\nPowered by MantisBT\\nCopyright © 2000 - 2021 MantisBT Team\\nContato administrator para assistência"
+    }]
+  }],
+  "suites": [{
+    "id": "b92a4260-f616-47fc-90df-dc4a073666a2",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["37ae89ff-6f5d-4b35-a3e5-a79a72714017"]
+  }],
+  "urls": ["https://mantis.saojudas.base2.com.br/"],
+  "plugins": []
+}

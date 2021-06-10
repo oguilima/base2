@@ -1,0 +1,306 @@
+{
+  "id": "afc0572f-3deb-430e-abc8-58807ec879c0",
+  "version": "2.0",
+  "name": "Mantis Base2",
+  "url": "https://mantis.saojudas.base2.com.br/",
+  "tests": [{
+    "id": "2165d54e-3ba2-4a56-bed2-94062b8299d9",
+    "name": "Aplicação de filtro",
+    "commands": [{
+      "id": "599d8c0e-5368-42ac-8598-df2bc7f5c120",
+      "comment": "",
+      "command": "open",
+      "target": "https://mantis.saojudas.base2.com.br/my_view_page.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1be5bc71-01be-4e19-8eea-1d987c25577a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "945x1020",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "aeb7c95a-889f-4a7a-8461-23d2e8df58b5",
+      "comment": "",
+      "command": "mouseDown",
+      "target": "css=.icon-bar:nth-child(2)",
+      "targets": [
+        ["css=.icon-bar:nth-child(2)", "css:finder"],
+        ["xpath=//button[@id='menu-toggler']/span[2]", "xpath:idRelative"],
+        ["xpath=//span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c58b8d57-0db7-4923-ab98-917b4f74a727",
+      "comment": "",
+      "command": "mouseUp",
+      "target": "id=menu-toggler",
+      "targets": [
+        ["id=menu-toggler", "id"],
+        ["css=#menu-toggler", "css:finder"],
+        ["xpath=//button[@id='menu-toggler']", "xpath:attributes"],
+        ["xpath=//div[@id='navbar-container']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Toggle sidebar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "939f3684-7cb8-4dd8-9539-9a4aeb07ec71",
+      "comment": "",
+      "command": "click",
+      "target": "id=menu-toggler",
+      "targets": [
+        ["id=menu-toggler", "id"],
+        ["css=#menu-toggler", "css:finder"],
+        ["xpath=//button[@id='menu-toggler']", "xpath:attributes"],
+        ["xpath=//div[@id='navbar-container']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Toggle sidebar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5f1d9bc2-4972-4f62-afc0-eee49af85e95",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Ver Tarefas",
+      "targets": [
+        ["linkText=Ver Tarefas", "linkText"],
+        ["css=.nav-list > li:nth-child(2) > a", "css:finder"],
+        ["xpath=//div[@id='sidebar']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/view_all_bug_page.php')]", "xpath:href"],
+        ["xpath=//div[2]/div/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,' Ver Tarefas')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d7e2f7c4-1e04-4dd3-a3a4-52b858d357ea",
+      "comment": "",
+      "command": "click",
+      "target": "id=filter-search-txt",
+      "targets": [
+        ["id=filter-search-txt", "id"],
+        ["css=#filter-search-txt", "css:finder"],
+        ["xpath=//input[@id='filter-search-txt']", "xpath:attributes"],
+        ["xpath=//form[@id='filters_form_open']/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3a8032f0-aa82-4598-a5da-22b2216ecf8d",
+      "comment": "",
+      "command": "type",
+      "target": "id=filter-search-txt",
+      "targets": [
+        ["id=filter-search-txt", "id"],
+        ["css=#filter-search-txt", "css:finder"],
+        ["xpath=//input[@id='filter-search-txt']", "xpath:attributes"],
+        ["xpath=//form[@id='filters_form_open']/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "Bug"
+    }, {
+      "id": "f0435dfd-9108-4544-ba9a-5fe5854cf4dd",
+      "comment": "",
+      "command": "click",
+      "target": "css=.no-float",
+      "targets": [
+        ["css=.no-float", "css:finder"],
+        ["xpath=//input[@name='filter_submit']", "xpath:attributes"],
+        ["xpath=//form[@id='filters_form_open']/div[2]/div/div/input[2]", "xpath:idRelative"],
+        ["xpath=//div/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "28b3851b-19d1-49c5-873a-36966f4f9593",
+    "name": "Exportar Excel de chamados",
+    "commands": [{
+      "id": "200e3318-ec3a-4c65-a0fe-197440d86097",
+      "comment": "",
+      "command": "open",
+      "target": "https://mantis.saojudas.base2.com.br/my_view_page.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "900074db-b195-47e9-9636-b2c2405b3b21",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "48b4bfe3-31ac-4704-be48-5b05059b201e",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(2) .menu-text",
+      "targets": [
+        ["css=li:nth-child(2) .menu-text", "css:finder"],
+        ["xpath=//div[@id='sidebar']/ul/li[2]/a/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/ul/li[2]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Ver Tarefas')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "da46df54-cf53-4f38-b046-ab754d7a7461",
+      "comment": "",
+      "command": "click",
+      "target": "css=.checkbox .lbl",
+      "targets": [
+        ["css=.checkbox .lbl", "css:finder"],
+        ["xpath=//table[@id='buglist']/tbody/tr/td/div/label/span", "xpath:idRelative"],
+        ["xpath=//label/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9cd11c37-0f84-4c90-bce5-2c019914e3a7",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Exportação para Excel",
+      "targets": [
+        ["linkText=Exportação para Excel", "linkText"],
+        ["css=.btn-group > .btn:nth-child(3)", "css:finder"],
+        ["xpath=//a[contains(text(),'Exportação para Excel')]", "xpath:link"],
+        ["xpath=//form[@id='bug_action']/div/div[2]/div/div/div/a[3]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'excel_xml_export.php')]", "xpath:href"],
+        ["xpath=//a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'Exportação para Excel')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "efaadd6b-02fa-49e0-8335-5d6fb91cc54b",
+    "name": "Imprimir tarefa",
+    "commands": [{
+      "id": "01ddb333-de39-4cbe-889b-4beb686b189c",
+      "comment": "",
+      "command": "open",
+      "target": "https://mantis.saojudas.base2.com.br/my_view_page.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6be46374-3298-40ed-9ab2-e06fdcbd3ac3",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fb52ad2d-6783-4676-8ccf-33412608b774",
+      "comment": "",
+      "command": "click",
+      "target": "css=a > .fa-list-alt",
+      "targets": [
+        ["css=a > .fa-list-alt", "css:finder"],
+        ["xpath=//div[@id='sidebar']/ul/li[2]/a/i", "xpath:idRelative"],
+        ["xpath=//div[2]/div/ul/li[2]/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1e6efed2-00f7-44f6-9dba-93f5d8803052",
+      "comment": "",
+      "command": "click",
+      "target": "css=.checkbox .lbl",
+      "targets": [
+        ["css=.checkbox .lbl", "css:finder"],
+        ["xpath=//table[@id='buglist']/tbody/tr/td/div/label/span", "xpath:idRelative"],
+        ["xpath=//label/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6c25d1f6-161c-41c7-9c3c-5a8de834fe2b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Imprimir Tarefas",
+      "targets": [
+        ["linkText=Imprimir Tarefas", "linkText"],
+        ["css=.btn-toolbar > .btn-group > .btn:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'Imprimir Tarefas')]", "xpath:link"],
+        ["xpath=//form[@id='bug_action']/div/div[2]/div/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'print_all_bug_page.php')]", "xpath:href"],
+        ["xpath=//div[2]/div/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Imprimir Tarefas')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b23c9183-f337-47bc-b061-78124cd9d268",
+      "comment": "",
+      "command": "click",
+      "target": "css=.lbl",
+      "targets": [
+        ["css=.lbl", "css:finder"],
+        ["xpath=//table[@id='buglist']/tbody[2]/tr/td/div/label/span", "xpath:idRelative"],
+        ["xpath=//span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "40cc35ad-171c-4b2e-b5a1-e2a18eb40967",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@value='Mostrar apenas os selecionados']", "xpath:attributes"],
+        ["xpath=//table[@id='buglist']/tbody[2]/tr[3]/td/input[2]", "xpath:idRelative"],
+        ["xpath=//td/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "99ed210a-7c34-441a-b831-7feae15e6c9f",
+    "name": "Transitar entre cadastros diários",
+    "commands": []
+  }, {
+    "id": "8d5ce4d2-5f8b-4028-bf6d-dcab365b0a90",
+    "name": "Reset filtro de busca",
+    "commands": [{
+      "id": "1a1d9ecc-7a4a-4f75-b0a3-29d3b0118131",
+      "comment": "",
+      "command": "open",
+      "target": "https://mantis.saojudas.base2.com.br/my_view_page.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5ab4a471-bad6-4ae4-b02f-f26faa474ff7",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0739cac6-dacb-4936-9feb-93e9d603e35e",
+      "comment": "",
+      "command": "click",
+      "target": "css=a > .fa-list-alt",
+      "targets": [
+        ["css=a > .fa-list-alt", "css:finder"],
+        ["xpath=//div[@id='sidebar']/ul/li[2]/a/i", "xpath:idRelative"],
+        ["xpath=//div[2]/div/ul/li[2]/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "773b2d46-5055-4e8e-8ca3-5e752ae8a529",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Redefinir",
+      "targets": [
+        ["linkText=Redefinir", "linkText"],
+        ["css=.form-inline .btn:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='filter']/div[2]/div/div/div/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'view_all_set.php?type=0')])[2]", "xpath:href"],
+        ["xpath=//div[2]/div/div/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "5c3d7a24-022e-41ee-bfa6-daa4b4168dde",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["2165d54e-3ba2-4a56-bed2-94062b8299d9"]
+  }],
+  "urls": [],
+  "plugins": []
+}
